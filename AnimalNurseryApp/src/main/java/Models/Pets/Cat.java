@@ -7,7 +7,7 @@ import java.util.List;
 
 public class Cat extends Pet {
 
-    private int catId;
+    private int id;
     private String name;
     private int age;
     private static List<String> listOfCommands;
@@ -18,9 +18,12 @@ public class Cat extends Pet {
         listOfCommands = new ArrayList<>();
     }
 
+    public void setId(int id) {
+        this.id = id;
+    }
 
-    public int getCatId() {
-        return catId;
+    public int getId() {
+        return id;
     }
 
     public String getName() {
@@ -42,7 +45,7 @@ public class Cat extends Pet {
     @Override
     public String toString() {
         return "Cat{" +
-                "catId=" + catId +
+                "catId=" + id +
                 ", name='" + name + '\'' +
                 ", age=" + age +
                 '}';

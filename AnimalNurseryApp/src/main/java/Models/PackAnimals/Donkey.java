@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Donkey extends PackAnimal {
-    private int donkeyId;
+    private int id;
     private String name;
     private int age;
     private static List<String> listOfCommands;
@@ -17,8 +17,12 @@ public class Donkey extends PackAnimal {
         listOfCommands = new ArrayList<>();
     }
 
-    public int getDonkeyId() {
-        return donkeyId;
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public int getId() {
+        return id;
     }
 
     public String getName() {
@@ -39,7 +43,7 @@ public class Donkey extends PackAnimal {
     @Override
     public String toString() {
         return "Donkey{" +
-                "donkeyId=" + donkeyId +
+                "donkeyId=" + id +
                 ", name='" + name + '\'' +
                 ", age=" + age +
                 '}';

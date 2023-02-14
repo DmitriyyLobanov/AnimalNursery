@@ -7,7 +7,7 @@ import java.util.List;
 
 public class Horse extends PackAnimal {
 
-    private int horseId;
+    private int id;
     private String name;
     private int age;
     private static List<String> listOfCommands;
@@ -18,8 +18,12 @@ public class Horse extends PackAnimal {
         listOfCommands = new ArrayList<>();
     }
 
-    public int getHorseId() {
-        return horseId;
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public int getId() {
+        return id;
     }
 
     public String getName() {
@@ -40,7 +44,7 @@ public class Horse extends PackAnimal {
     @Override
     public String toString() {
         return "Horse{" +
-                "horseId=" + horseId +
+                "horseId=" + id +
                 ", name='" + name + '\'' +
                 ", age=" + age +
                 '}';

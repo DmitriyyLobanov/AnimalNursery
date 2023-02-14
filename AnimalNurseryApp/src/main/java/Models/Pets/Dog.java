@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Dog extends Pet {
-    private int dogId;
+    private int id;
     private String name;
     private int age;
     private static List<String> listOfCommands;
@@ -17,8 +17,12 @@ public class Dog extends Pet {
         listOfCommands = new ArrayList<>();
     }
 
-    public int getDogId() {
-        return dogId;
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public int getId() {
+        return id;
     }
 
     public String getName() {
@@ -39,7 +43,7 @@ public class Dog extends Pet {
     @Override
     public String toString() {
         return "Dog{" +
-                "dogId=" + dogId +
+                "dogId=" + id +
                 ", name='" + name + '\'' +
                 ", age=" + age +
                 '}';
