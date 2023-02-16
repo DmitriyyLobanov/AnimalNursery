@@ -7,4 +7,6 @@ public class PackAnimal extends Animal {
     private String name;
     private int age;
     private List<String> listOfCommands;
+
+
 }
