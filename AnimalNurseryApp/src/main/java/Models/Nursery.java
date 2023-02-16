@@ -25,4 +25,9 @@ public class Nursery {
         animals.add(animal);
     }
 
+    public int getLength(){
+        return animals.size();
+    }
+
+
 }

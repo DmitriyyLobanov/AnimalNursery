@@ -9,7 +9,7 @@ public class Camel extends PackAnimal {
     private int id;
     private String name;
     private int age;
-    private static List<String> listOfCommands;
+    private List<String> listOfCommands;
 
     public Camel(String name, int age) {
         this.name = name;
@@ -33,7 +33,7 @@ public class Camel extends PackAnimal {
         return age;
     }
 
-    public static List<String> getListOfCommands() {
+    public  List<String> getListOfCommands() {
         return listOfCommands;
     }
     public void setNewCommand(String newCommand){

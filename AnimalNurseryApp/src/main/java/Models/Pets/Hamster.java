@@ -9,7 +9,7 @@ public class Hamster extends Pet {
     private int id;
     private String name;
     private int age;
-    private static List<String> listOfCommands;
+    private  List<String> listOfCommands;
 
     public Hamster(String name, int age) {
         this.name = name;
@@ -33,7 +33,7 @@ public class Hamster extends Pet {
         return age;
     }
 
-    public static List<String> getListOfCommands() {
+    public  List<String> getListOfCommands() {
         return listOfCommands;
     }
     public void setNewCommand(String newCommand){
