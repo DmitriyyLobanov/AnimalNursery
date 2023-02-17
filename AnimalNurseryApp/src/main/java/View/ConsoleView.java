@@ -23,6 +23,10 @@ public class ConsoleView {
         this.nursery = nursery;
     }
 
+    /**
+     * Основной метод ConsoleView, реализует взаимодействие с пользователем,
+     * навигацию по меню.
+     */
     public void start(){
         Scanner scanner = new Scanner(System.in);
         String userChoice;
@@ -44,11 +48,15 @@ public class ConsoleView {
             }
             if (Objects.equals(userChoice, "4")){
                 System.out.println("Всего доброго!");
+                scanner.close();
                 break;
             }
         }
     }
 
+    /**
+     * Метод изменения списка команд конкретного животного.
+     */
     private void editConcreteCommandsList(){
         Scanner scanner = new Scanner(System.in);
         int userChoice;
@@ -68,6 +76,7 @@ public class ConsoleView {
                 System.out.println("Введите корректное значение!\n");
             }
         }
+        scanner.close();
     }
     private void showAnimals(){
         List<Animal> animalList = nursery.getAnimals();
@@ -82,6 +91,9 @@ public class ConsoleView {
         System.out.println("\n");
     }
 
+    /**
+     * Метод добавления нового животного в питомник.
+     */
     private void addNewAnimal(){
         Scanner scanner = new Scanner(System.in);
 
@@ -183,6 +195,7 @@ public class ConsoleView {
                 System.out.println("Введите корректное значение!\n");
             }
         }
+        scanner.close();
     }
 
 
